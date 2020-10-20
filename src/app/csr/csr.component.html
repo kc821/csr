@@ -1,0 +1,11 @@
+<div style="text-align: center">
+    <mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+        <ng-container matColumnDef="Results">
+          <mat-header-cell style="display: block" *matHeaderCellDef> Results </mat-header-cell>
+          <mat-cell style="display: block" *matCellDef="let row"> {{ row }} </mat-cell>
+        </ng-container>
+
+        <mat-header-row *matHeaderRowDef="['Results']"></mat-header-row>
+        <mat-row *matRowDef="let row; columns: ['Results']"></mat-row>
+      </mat-table>
+</div>
